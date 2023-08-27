@@ -1,0 +1,38 @@
+/* Watchmovie.css */
+.movieparentdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.youtube,
+.nomovie {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Center the Youtube video or image */
+.youtube {
+  width: auto;
+  height: auto;
+  max-height: 60vh;
+}
+
+.nomovie {
+  max-height: 60vh; /* Set a maximum height for the image */
+  width: auto;
+}
+
+/* Center and make responsive for smaller screens */
+@media (max-width: 768px) {
+  .movieparentdiv {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .youtube,
+  .nomovie {
+    max-height: 40vh; /* Adjust max-height for responsiveness */
+  }
+}
